@@ -1,6 +1,22 @@
 /**********************************************
 *** GENERAL
 **********************************************/
+@font-face {
+    font-family: 'san fancisco';
+    src: url('fonts/sans-francisco/San-Francisco.ttf'), format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: "linea-arrows-10";
+   src:  url("fonts/linea-arrows-10.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 
 * {
     margin: 0;
@@ -9,6 +25,29 @@
     
 }
 
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "linea-arrows-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrows-rotate:before {
+    content: "\e04d";
+}
+  
+.icon-arrows-circle-plus:before {
+    content: "\e00d";
+}
+.icon-arrows-squares:before {
+    content: "\e078";
+}
 .clearfix::after {
     content: "";
     display: table;
@@ -19,8 +58,8 @@ body {
     background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(Desert_Storm.jpg);
     background-size: cover;
     background-position: center;
-    font-family: Lato;
-    font-weight: 300;
+    font-family: 'san francisco' , sans-serif;
+    font-weight: 200;
     position: relative;
     height: 100vh;
     color: #555;
@@ -100,8 +139,8 @@ body {
 
 .player-current-score {
     font-size: 30px;
-    background-color: #333333;
-    padding: 7px;
+    background-color: #EB4D4D;
+    padding: 12px 20px;
     border-radius: 30px;
 }
 
@@ -113,7 +152,7 @@ button {
     color: #555;
     background: none;
     border: none;
-    font-family: Lato;
+    font-family: 'san fancisco', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
@@ -153,4 +192,29 @@ i {
 }
 
 .winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 400; color: #EB4D4D; }
+.winner .player-name { font-weight: 300; color: #EB4D4D; }
+.final-score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    color: #555555;
+    font-size: 15px;
+    font-family: 'san fancisco', sans-serif;
+    padding: 14px;
+    width: 200px;
+    text-transform: uppercase;
+    border: 0.5px solid #dfdada;
+    text-align: center;
+    
+
+}
+.final-score:focus {
+    outline: #dfdada;
+}
+#dice-1 {
+    top: 120px;
+}
+#dice-2 {
+    top: 240px;
+}

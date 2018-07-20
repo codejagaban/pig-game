@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
         <link type="text/css" rel="stylesheet" href="style.css">
         
         <title>Pig Game</title>
@@ -29,11 +28,14 @@
                 </div>
             </div>
             
-            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
-            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
-            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            <button class="btn-new"><i class="icon icon-arrows-circle-plus"></i>New game</button>
+            <button class="btn-roll"><i class="icon icon-arrows-rotate"></i>Roll dice</button>
+            <button class="btn-hold"><i class="icon icon-arrows-squares"></i>Hold</button>
+            <input type="text" placeholder="Change Final Score" class="final-score">
             
-            <img src="dice-5.png" alt="Dice" class="dice">
+            <img src="dice-5.png" alt="Dice" class=" dice" id="dice-1">
+
+            <img src="dice-5.png" alt="Dice" class=" dice" id="dice-2">
         </div>
         
         <script src="app.js"></script>
