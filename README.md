@@ -19,4 +19,4 @@ here are the rules of the game.
 6.Good luck with this game and try not to roll a number 1 dice, Lol.
 
 
-Here's the link to the game, enjoy https://codekyd.github.io/pig-game/
+Here's the link to the game, enjoy https://trustjamin.github.io/pig-game/
